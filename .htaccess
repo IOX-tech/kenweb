@@ -1,0 +1,19 @@
+#pageNotFoundSpec
+ErrorDocument 404 404.html
+
+#httpsEnforcement
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#blockingBackend
+Redirect /style.css /blocked.html
+Redirect /script.js /blocked.html
+Redirect /error.css /blocked.html
+Redirect /load.css /blocked.html
+Redirect /load.js /blocked.html
+Redirect /update.json /blocked.html
+Redirect /ver.xml /blocked.html
+
+#makingInvisibleLinksToHTMLfiles
+#workingonit;p
