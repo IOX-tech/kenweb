@@ -18,7 +18,7 @@ body{
   .loader div{
     background: #fff;
     width: 16px;
-    height: 32px;
+    height: 17.4px;
     margin-left: 10px;
     animation: loader 1.2s infinite;
     border-radius: 12px;
@@ -37,7 +37,7 @@ body{
   
   .loader div:nth-child(2){
     background: #85e29a;
-    animation-delay: -0.20s;
+    animation-delay: -0.20426s;
   }
   
   .loader div:nth-child(3){
