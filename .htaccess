@@ -7,13 +7,19 @@ RewriteCond %{HTTPS} off
 RewriteRule RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #blockingBackend
-Redirect /style.css /blocked.html
-Redirect /script.js /blocked.html
-Redirect /error.css /blocked.html
-Redirect /load.css /blocked.html
-Redirect /load.js /blocked.html
-Redirect /update.json /blocked.html
-Redirect /ver.xml /blocked.html
+Redirect /path/to/old/file/style.css /path/to/new/file/blocked.html
+Redirect /path/to/old/file/load.css /path/to/new/file/blocked.html
+Redirect /path/to/old/file/error.css /path/to/new/file/blocked.html
+Redirect /path/to/old/file/script.js /path/to/new/file/blocked.html
+Redirect /path/to/old/file/load.js /path/to/new/file/blocked.html
+Redirect /path/to/old/file/animation.js /path/to/new/file/blocked.html
+Redirect /path/to/old/file/.htaccess /path/to/new/file/blocked.html
+Redirect /path/to/old/file/favicon.ico /path/to/new/file/blocked.html
+Redirect /path/to/old/file/version.json /path/to/new/file/blocked.html
+Redirect /path/to/old/file/pur.json /path/to/new/file/blocked.html
+Redirect /path/to/old/file/lists.js /path/to/new/file/blocked.html
+Redirect /path/to/old/file/lists.xml /path/to/new/file/blocked.html
+Redirect /path/to/old/file/lists.yaml /path/to/new/file/blocked.html
 
 #makingInvisibleLinksToHTMLfiles
 #workingonit;p
