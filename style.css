@@ -286,9 +286,8 @@ section .title::after{
     transform: scale(1.05);
 }
 .services .serv-content .card i{
-    font-size: 20px;
+    font-size: 36px;
     color: #fff;
-    horizontal-align: left; 
 }
 .services .serv-content .card:hover i{
     color: #fff;
